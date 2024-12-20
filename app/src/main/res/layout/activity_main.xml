@@ -1,0 +1,116 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Standard Time Section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.aniviza.bdas.BDASClockWidget
+            android:id="@+id/standardAnalogClock"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/standardDigitalClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/standardClockSunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunrise: 07:16 AM"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/standardClockSunset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunset: 04:43 PM"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/standardClockLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Standard Time"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginVertical="16dp" />
+
+    <!-- BDAS Time Section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.aniviza.bdas.BDASClockWidget
+            android:id="@+id/bdasAnalogClock"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/bdasDigitalClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:36:59 AM"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/bdasClockSunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunrise: 07:16 AM"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/bdasClockSunset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunset: 04:43 PM"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/bdasClockLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BDAS Time"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>
